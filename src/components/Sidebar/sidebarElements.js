@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const SidebarContainer = styled.div`
-  height: 100vh;
+  height: calc(100vh - 80px);
   width: 350px;
-  background-color: #6378c7;
-  position: absolute;
-  top: 0;
+  background-color: #0d174a;
+  position: fixed;
+  top: 80px;
   right: 0;
   transform: ${({ isMenuOpened }) =>
     isMenuOpened ? "translateX(0)" : "translateX(100%)"};
@@ -27,6 +27,7 @@ export const SidebarContainer = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding-right: 30px;
+  z-index: 8;
 `;
 
 export const SidebarWrap = styled.div`

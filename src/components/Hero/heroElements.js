@@ -33,12 +33,20 @@ export const HeroH1 = styled.h1`
   margin-bottom: 20px;
   box-shadow: inset 19px 15px #c76378;
   letter-spacing: 2px;
+
+  @media screen and (max-width: 450px) {
+    font-size: 26px;
+  }
 `;
 export const HeroP = styled.p`
   text-transform: uppercase;
   font-size: 22px;
   padding: 20px 0;
   letter-spacing: 2px;
+
+  @media screen and (max-width: 450px) {
+    font-size: 18px;
+  }
 `;
 export const HeroBtn = styled.button`
   width: 250px;
@@ -55,5 +63,10 @@ export const HeroBtn = styled.button`
   outline: none;
   &:hover {
     transform: translateY(-5px);
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 5px 10px;
+    font-size: 16px;
   }
 `;

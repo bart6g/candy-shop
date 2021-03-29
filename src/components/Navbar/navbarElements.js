@@ -2,13 +2,26 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.nav`
   height: 80px;
+  width: 100%;
+  /* position: relative; */
+  background-color: ${({ scroll }) => (scroll ? "#0D174A" : "transparent")};
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  @media screen and (max-width: 450px) {
+    padding-left: 15px;
+  }
+`;
+
+export const NavWrap = styled.div`
   max-width: 1300px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /* position: relative; */
+  position: relative;
 `;
 
 export const Logo = styled.div`
@@ -25,8 +38,11 @@ export const Hamburger = styled.div`
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 10;
   overflow-x: visible;
+
+  @media screen and (max-width: 450px) {
+    right: 15px;
+  }
 `;
 export const Line = styled.div`
   width: 100%;
