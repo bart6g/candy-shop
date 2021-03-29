@@ -118,16 +118,16 @@ const Content = () => {
         <form>
           <div className="inputs">
             <label>
-              <input type="text" />
+              <input type="text" required />
               <span className="placeholder">Your name</span>
             </label>
             <label>
-              <input type="email" />
+              <input type="text" required />
               <span className="placeholder">Adress email</span>
             </label>
           </div>
           <label>
-            <textarea name="" id="" cols="20" rows="5"></textarea>
+            <input type="text" required className="wish" />
             <span className="placeholder">Any wishes?</span>
           </label>
         </form>

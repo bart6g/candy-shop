@@ -166,7 +166,8 @@ export const Contact = styled.div`
   }
 
   h1 {
-    margin-top: 10px;
+    margin-top: 30px;
+    color: white;
   }
 
   form {
@@ -180,15 +181,40 @@ export const Contact = styled.div`
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
   label {
     display: flex;
-    flex-direction: column-reverse;
+    position: relative;
+    overflow: hidden;
+    span {
+      position: absolute;
+      top: 28px;
+      left: 5px;
+      transition: all 0.3s ease;
+    }
   }
   input {
-  }
-  textarea {
     width: 100%;
+    padding: 10px 20px 10px 10px;
+    margin: 20px 0;
+    appearance: none;
+    outline: none;
+    border: none;
+  }
+
+  input:focus,
+  input:valid {
+    + .placeholder {
+      top: -5px;
+      display: inline-block;
+      font-weight: 600;
+    }
+  }
+  .wish {
+    height: 100px;
   }
 `;
 
@@ -200,6 +226,10 @@ export const ContactButton = styled.button`
   outline: none;
   border: none;
   border-radius: 5px;
-
   font-weight: 700;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 `;
