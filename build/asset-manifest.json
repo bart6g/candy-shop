@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "./static/css/main.fb671a8b.chunk.css",
+    "main.js": "./static/js/main.bfa6196d.chunk.js",
+    "main.js.map": "./static/js/main.bfa6196d.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.3fa5908d.js",
+    "runtime-main.js.map": "./static/js/runtime-main.3fa5908d.js.map",
+    "static/js/2.b996e128.chunk.js": "./static/js/2.b996e128.chunk.js",
+    "static/js/2.b996e128.chunk.js.map": "./static/js/2.b996e128.chunk.js.map",
+    "static/js/3.76217659.chunk.js": "./static/js/3.76217659.chunk.js",
+    "static/js/3.76217659.chunk.js.map": "./static/js/3.76217659.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.fb671a8b.chunk.css.map": "./static/css/main.fb671a8b.chunk.css.map",
+    "static/js/2.b996e128.chunk.js.LICENSE.txt": "./static/js/2.b996e128.chunk.js.LICENSE.txt",
+    "static/media/accessory2.fc0ea7be.png": "./static/media/accessory2.fc0ea7be.png",
+    "static/media/birthdaycake.9afc9bd8.svg": "./static/media/birthdaycake.9afc9bd8.svg",
+    "static/media/cake.d797b5e0.jpg": "./static/media/cake.d797b5e0.jpg",
+    "static/media/cupcakes.ef9bed6e.jpg": "./static/media/cupcakes.ef9bed6e.jpg",
+    "static/media/desert.a3d0f282.jpg": "./static/media/desert.a3d0f282.jpg",
+    "static/media/donout.aaf39d15.jpg": "./static/media/donout.aaf39d15.jpg",
+    "static/media/heroimg.025b46db.jpg": "./static/media/heroimg.025b46db.jpg",
+    "static/media/present.91822504.svg": "./static/media/present.91822504.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3fa5908d.js",
+    "static/js/2.b996e128.chunk.js",
+    "static/css/main.fb671a8b.chunk.css",
+    "static/js/main.bfa6196d.chunk.js"
+  ]
+}

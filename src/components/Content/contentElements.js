@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContentContainer = styled.div`
   max-width: 1300px;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   height: 100%;
 `;
 
@@ -175,6 +175,10 @@ export const Contact = styled.div`
     flex-direction: column;
     width: 60%;
     margin: 10px 0;
+
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
   }
 
   .inputs {
