@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ContentContainer,
   ContentSection,
@@ -16,49 +16,36 @@ import {
   Contact,
   ContactButton,
 } from "./contentElements";
-import img1 from "../../images/birthdaycake.svg";
-import img2 from "../../images/present.svg";
-import img3 from "../../images/accessory2.png";
+
 import donout from "../../images/donout.jpg";
 import cake from "../../images/cake.jpg";
 import desert from "../../images/desert.jpg";
 import cupcakes from "../../images/cupcakes.jpg";
 import { GiCupcake } from "react-icons/gi";
+import { initSectionData, initProductData } from "../../data/contentData";
 
 const Content = () => {
+  const [sectionData, setSectionData] = useState(initSectionData);
+  const [productData, setProductData] = useState(initProductData);
   return (
     <ContentContainer>
       <ContentSection>
-        <SectionWrapper>
-          <SectionText>
-            <h2>Who are we?</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              placeat cum perferendis nihil modi debitis voluptate sed autem
-              cumque praesentium, nobis quia, itaque eum maxime corporis hic
-              commodi est dignissimos?
-            </p>
-            <SectionButton>Order now</SectionButton>
-          </SectionText>
-          <ImgWrap>
-            <img src={img1} alt="cake" />
-          </ImgWrap>
-        </SectionWrapper>
-        <SectionWrapper imgLeft={true}>
-          <SectionText>
-            <h2>Send a sweet gift to a friend</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              placeat cum perferendis nihil modi debitis voluptate sed autem
-              cumque praesentium, nobis quia, itaque eum maxime corporis hic
-              commodi est dignissimos?
-            </p>
-            <SectionButton>Order now</SectionButton>
-          </SectionText>
-          <ImgWrap>
-            <img src={img2} alt="present" />
-          </ImgWrap>
-        </SectionWrapper>
+        {sectionData
+          ? sectionData.map(
+              ({ id, title, description, button, img, alt, imgLeft }) => (
+                <SectionWrapper key={id} imgLeft={imgLeft}>
+                  <SectionText>
+                    <h2>{title}</h2>
+                    <p>{description}</p>
+                    <SectionButton>{button}</SectionButton>
+                  </SectionText>
+                  <ImgWrap>
+                    <img src={img} alt={alt} />
+                  </ImgWrap>
+                </SectionWrapper>
+              )
+            )
+          : null}
 
         <ProductWrapper>
           <Title>Our products</Title>
