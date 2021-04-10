@@ -1,4 +1,4 @@
-#Candy shop
+# Candy shop
 
 This app was written in React.js with Styled-Components. It's very simple with very few functionalities, the focus here is primarily on the layout, the use of grid and flex and adapting this layout to all browser widths.
 
